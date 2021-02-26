@@ -15,6 +15,8 @@ body{
     grid-template-columns: 70px auto;
     grid-template-rows: 60px;
     margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 .navbar-container{
     display:grid;
@@ -24,6 +26,7 @@ body{
     background-color:black;
     color:white;
     margin: 0px;
+    padding:0;
 }
 
 .navbar-container h2{
@@ -42,7 +45,7 @@ body{
 .banner{
     font-style: oblique;
     display:block;
-    width:100%;
+    /* width:100%; */
     text-align:center;
     color:black;
     background-color:burlywood;
@@ -108,12 +111,11 @@ body{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 70px 50px auto 70px;
-    margin:0px;
-    padding:0px;
+    
 }
 
 .header-grid{
-    grid-column: 1 / -1;
+    grid-column: 1 /-1;
     
 }
 .navbar-grid{
@@ -173,14 +175,6 @@ body{
 
 
 @media only screen and (max-width: 768px) {
-    *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    body{
-        margin:0;
-    }
     .services-grid{
         display: block;
         margin:auto;
@@ -191,7 +185,6 @@ body{
         grid-template-columns:1fr;
         grid-template-rows: 100px auto 10px;
     }
-    
 
     .image-grid{
         display: grid;
@@ -213,7 +206,7 @@ body{
 
 }
 
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 320px) {
 
 
     *{
@@ -227,5 +220,5 @@ body{
     .navbar-container h2{
         font-size:18px;
     }
-}
+} */
 
